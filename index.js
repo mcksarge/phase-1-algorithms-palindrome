@@ -1,13 +1,27 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let j = word.length;
+  for (let i = 0; i < j/2; i++) {
+    if (word[i] !== word[j - 1 - i]) {
+      return false
+    }
+  }
+  return true
 }
 
 /* 
   Add your pseudocode here
+  function that receives string argument
+    iterates over the string left to right and then right to left.
+    if string is a palindrome, return true
 */
 
 /*
   Add written explanation of your solution here
+  add Variable that contains the length of the string - 1
+  add a for loop where the variable i is declared
+  add variable x and y, where x reads the string forward and y reads it backwards
+  if x is equal to y, it returns true
 */
 
 // You can run `node index.js` to view these console logs
